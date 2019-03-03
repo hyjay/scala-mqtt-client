@@ -1,11 +1,11 @@
-package com.github.hyjay.mqtt.util
+package com.github.hyjay.mqtt.actor
 
 import java.util.concurrent.{ScheduledExecutorService, TimeUnit}
 
 import scala.concurrent.duration.FiniteDuration
 import scala.concurrent.{Future, Promise}
 
-private[mqtt] trait Scheduler {
+trait Scheduler {
 
   /**
     * Return Future[Unit] that succeeds after a specific duration.
@@ -16,7 +16,7 @@ private[mqtt] trait Scheduler {
   def sleep(duration: FiniteDuration): Future[Unit]
 }
 
-private[mqtt] object Scheduler {
+object Scheduler {
 
   def apply()(implicit ses: ScheduledExecutorService): Scheduler = new JavaScheduler()
 

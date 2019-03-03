@@ -3,7 +3,6 @@ package com.github.hyjay.mqtt.actor
 import cats.effect.{ContextShift, IO, Timer}
 import com.github.hyjay.mqtt.core._
 import com.github.hyjay.mqtt.netty.NettyMqttClient
-import com.github.hyjay.mqtt.util.Scheduler
 import fs2.Stream
 import org.slf4j.LoggerFactory
 

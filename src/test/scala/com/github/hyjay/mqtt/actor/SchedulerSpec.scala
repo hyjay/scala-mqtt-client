@@ -1,4 +1,4 @@
-package com.github.hyjay.mqtt.util
+package com.github.hyjay.mqtt.actor
 
 import java.util.concurrent.Executors
 

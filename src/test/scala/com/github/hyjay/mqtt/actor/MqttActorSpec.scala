@@ -4,7 +4,7 @@ import java.util.concurrent.Executors
 
 import com.github.hyjay.mqtt.MqttSpec
 import com.github.hyjay.mqtt.core._
-import com.github.hyjay.mqtt.util.{ConcurrentQueue, Scheduler}
+import com.github.hyjay.mqtt.util.ConcurrentQueue
 
 import scala.concurrent.Await
 import scala.concurrent.duration._
