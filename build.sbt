@@ -30,6 +30,8 @@ publishMavenStyle := true
 resolvers +=
   "bintray" at "https://jcenter.bintray.com"
 
+parallelExecution in Test := false
+
 libraryDependencies ++= Seq(
   "io.netty" % "netty-all" % "4.1.33.Final",
   "co.fs2" %% "fs2-io" % "1.0.3",
