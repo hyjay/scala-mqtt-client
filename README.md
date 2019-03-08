@@ -63,6 +63,12 @@ val connectionConfig = ConnectionConfig("localhost", 1883, tls = false, CONNECT(
 MqttActor.run(connectionConfig, actor)
 ```
 
+## Dependencies
+Add this to your `build.sbt`:
+```
+libraryDependencies += "com.github.hyjay" %% "scala-mqtt-client" % Version
+```
+
 ## Testing
 ```
 sbt test
